@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="71529664-f244-4796-a2bc-7a868f739951" name="UMLClassDiagram1" linkedPackageId="4a3f70a3-b0ba-44d7-90ae-2ccd10801048" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e8a3a991-656d-4feb-a69a-a71ed05e9a61" name="Deltagere" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="127574ec-6d19-439a-bd4e-d1ef2edd80bd" />
+        <targetEnds>
+          <association Id="82885e5e-4a55-4d12-ab27-22879bf3c162" isDerived="false" sourceEndRoleName="Tilmelding" targetEndRoleName="Tilmeldingsliste" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a3db5530-1196-4b36-80ba-759eed7d2295" LastKnownName="DeltagerList" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="310505d6-7083-4374-a9b6-dd43f90dcba8" name="Tilmelding" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d66fc6c2-0e2f-4046-aa54-90c2041b4b7a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86311e0e-82fc-4ab5-b659-aba8865bfec1" name="Tilmeldingsliste" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eae99710-465f-4285-b508-be3516b48876" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="52360a38-8c54-4f18-917b-75aea6855b88" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3fca11cb-5c73-48f9-b8c0-b1e157740991" name="husNr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="14947803-a61a-407b-86c3-791dfd286c0a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889d629c-63cd-40b0-b928-4e41076919a6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="b6251d92-60e4-4721-b89a-d4322b388fde" name="voksne" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c18ee7e-cc77-4087-a3ef-60a4aa263902" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889d629c-63cd-40b0-b928-4e41076919a6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="19eabd0b-6d31-422a-8c5f-bca38e53ab9c" name="børn(7-15)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9af226bb-4540-494c-a0a1-1d66453d2078" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889d629c-63cd-40b0-b928-4e41076919a6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="8ee0d700-a409-4de5-bbe9-74548d2d98df" name="børn(3-6)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b6baf026-f2b9-4ef3-a1b6-be7f00ed6d12" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889d629c-63cd-40b0-b928-4e41076919a6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="b15e69b2-be94-49e6-a3c8-3468a269feca" name="børnUnder3" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3741ca9e-00c7-4b63-8222-f8958c96eb1b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889d629c-63cd-40b0-b928-4e41076919a6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="ca737f5d-0c74-428f-ab67-294e2d06c14c" name="antal kuverter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8ccf25a5-dc12-4806-9ee9-2c1f639d45de" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b502c362-7d18-4b2f-b897-07650b93cc52" name="list&lt;person&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9c09aa46-39e8-44eb-9d15-5176869f9d78" />
+          </operation>
+          <operation Id="9117f9a3-4b75-4ae3-8d99-0b88065ede0e" name="Antal for kuvert pr hus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="41e57a81-ad84-4264-a51c-3f1fec4c6285" />
+          </operation>
+          <operation Id="57415500-072c-4959-9385-88a6a3bebb5f" name="Pris for" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d6023ee5-4eca-4d46-abab-0f8ba58f6074" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c101fd44-56a2-4db8-b7d9-3bfd3ace3f76" name="Prisberegning" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7f2d5971-8348-4662-8c38-569420424fb5" />
+        <targetEnds>
+          <association Id="53c2e1cf-dcea-4ad5-b33b-99c2586883c3" isDerived="false" sourceEndRoleName="Prisberegning" targetEndRoleName="Dag" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1a93c020-64dd-46f0-b0d9-c85507ef3dbd" LastKnownName="Dagsliste" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49faf00e-1a22-407d-b1d5-b0f40188c9bf" name="Prisberegning" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76bfdd3d-02ea-45a9-b617-3ef89bab0db2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e77564c9-25f9-4add-9521-8e17aa4de623" name="Dag" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a95ecf61-fc65-4d9e-b472-46654e8966fe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c2c6cf0b-96c3-433e-8f57-3e33db4da4d9" />
+          </association>
+          <association Id="a5bbd85b-43a1-499c-a696-b701dc3892b3" isDerived="false" sourceEndRoleName="Prisberegning" targetEndRoleName="Tilmeldingsliste" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a3db5530-1196-4b36-80ba-759eed7d2295" LastKnownName="DeltagerList" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="065a0c90-d7bf-41ed-bf6f-eb255377be22" name="Prisberegning" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2e39a048-054b-406a-bfa9-7b390a8ac1da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81a05953-96de-40a0-b8d4-06c78dfa0102" name="Tilmeldingsliste" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7aabbb52-ee5f-4603-b0ae-1ea071b3b95d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f44ccae8-e902-45ef-b1f9-35c8deec2710" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a3db5530-1196-4b36-80ba-759eed7d2295" name="DeltagerList" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="66b1d764-9341-41ec-81bb-e73ec5d345b3" />
+        <ownedAttributesInternal>
+          <property Id="4f09d80d-5641-476b-8d5a-5fe3be98092c" name="børn(3-6)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="89d5365c-670b-4db5-9ba6-652af6980660" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="626810e2-6756-4cb5-809f-7c27ba741c87" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="41c43cce-0bba-4a8e-8ac1-fc61a9f7d37f" name="børn(7-15)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="558f9b64-36c7-4148-9dfa-4b2a4555fe20" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889d629c-63cd-40b0-b928-4e41076919a6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="38002afe-bea4-408f-a4c3-fd6bf586b564" name="børnUnder3" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1cd6af97-9cc2-457a-ac42-907c513124c3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f435429e-a893-4d88-9018-5e011a098c3b" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="b3c6912e-a546-4dee-af97-12089b9c3f12" name="husNr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="25590534-57f4-44d4-b067-4ee1c73fe747" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d09c914-66f1-43a0-8009-2ed51ee75909" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="3c471487-9496-4526-a2a1-ae2435a2ca35" name="voksne" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c37607b-afc7-4c41-b9af-ad7793319aa5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e6b5ea62-c976-466f-86d2-b9f4101579bb" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e15c3c95-7a5a-48c9-9dd1-b3a2946aab5e" name="Antal kuvertpris for uge" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="df1b1fd0-7a34-492c-9e7b-4ff99dec5123" />
+          </operation>
+          <operation Id="a35a9fbb-c880-4d63-9c4a-2c17d034ef29" name="Pris pr. hus for ugen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ccea5f63-fbe7-4cb6-a24f-4f282c29326b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b6943f1d-1666-4a8f-9248-d773a284c068" name="Arbejdsopgaver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="66ca505d-9ac0-4d22-96e2-cbcf7067af0f" />
+        <ownedAttributesInternal>
+          <property Id="355ac5e1-6a9f-4b93-ab76-538a1572b1c7" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5c70aaf3-a50c-4118-a3ac-661e02381a37" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="889d629c-63cd-40b0-b928-4e41076919a6" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="626810e2-6756-4cb5-809f-7c27ba741c87" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f435429e-a893-4d88-9018-5e011a098c3b" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2d09c914-66f1-43a0-8009-2ed51ee75909" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e6b5ea62-c976-466f-86d2-b9f4101579bb" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5cb1e281-aac9-4539-b9d2-ebb315758eae" name="Afmelding" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ebacb24-fc9f-41fd-9102-a312b8fae15a" />
+        <targetEnds>
+          <association Id="0f96c840-1dac-4caa-b75e-d371c234f83c" isDerived="false" sourceEndRoleName="Afmelding" targetEndRoleName="Tilmeldingsliste" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a3db5530-1196-4b36-80ba-759eed7d2295" LastKnownName="DeltagerList" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b3bd7e1f-3862-4688-9c1f-4bc402b673c8" name="Afmelding" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4aa714a3-40a5-412f-8660-4e6928b93ae1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf3cdfd5-7743-471f-8247-90c405ba780b" name="Tilmeldingsliste" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5639a0a6-4010-4294-983a-f2ce484bf961" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c06bcf8e-e649-459e-ace7-fb7f2f10c6e6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d5c4de22-9dca-481d-b057-43097d59c33b" name="voksne" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="29872d33-0c8c-4386-8e8e-6d5d5e63f3cb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="59fe2183-0b22-4148-94d0-eb209a634df5" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="ebf0a9a7-0951-481a-9e06-70f026b92057" name="husNr" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a128b7f3-ba94-46b3-96c7-0d4129d49d9b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1cd84c49-3cd7-493c-bcaa-66d044d8c49f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="132d4aab-13e0-4f83-a5ca-41db33aa90e1" name="børnUnder3" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b5d6c5b-0feb-4ce8-8d26-6f83db7207d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dfeac8e3-7937-4de2-bdee-c8c25278c40f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="37523353-f54f-4af3-8237-77d999bdc3d4" name="børn(7-15)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9eaceb45-0544-42c8-bdb7-1325dfdaa02d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="259a6c7e-e816-4248-8b5e-72d6c28c62e6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="7bdefed0-87e4-41cf-8aef-94b9b041fc85" name="børn(3-6)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9edee7a9-55c5-493a-86da-1283c4073304" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0780a85f-d26d-42b1-a391-5d68e39ae616" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a44e05a4-228b-4732-a477-81090af42bee" name="Hus" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="30465317-69f8-4f3e-883e-099e4f10f5e0" />
+        <targetEnds>
+          <association Id="184ba885-ed0e-479d-bbf5-4b5cfe3192f5" isDerived="false" sourceEndRoleName="Hus" targetEndRoleName="Dag" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1a93c020-64dd-46f0-b0d9-c85507ef3dbd" LastKnownName="Dagsliste" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9935d820-c58f-4537-9d52-976bd8c72bdd" name="Hus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="633bad54-da2d-4ff2-81e6-f11491282c99" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0f55a18-3f52-4814-8a7a-83563b7eb410" name="Dag" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f12db890-6d59-4813-85e5-63591186c44d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d3596694-408e-497e-946a-5ba3c2d17288" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="5b3728e3-adfc-460c-a336-de45475cbfda" name="list&lt;person&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="50c89f63-0d8b-47a4-af03-ccb3818e1244" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="0780a85f-d26d-42b1-a391-5d68e39ae616" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="259a6c7e-e816-4248-8b5e-72d6c28c62e6" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dfeac8e3-7937-4de2-bdee-c8c25278c40f" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1cd84c49-3cd7-493c-bcaa-66d044d8c49f" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="59fe2183-0b22-4148-94d0-eb209a634df5" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="962aa7a9-b2b8-4799-bb50-02bb3f708237" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1a93c020-64dd-46f0-b0d9-c85507ef3dbd" name="Dagsliste" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a314022d-3236-4489-9aa5-ecc93df7d78c" />
+        <targetEnds>
+          <association Id="ea1ef600-d368-4d7e-ac19-a7ddd6b0a10e" isDerived="false" sourceEndRoleName="Dag" targetEndRoleName="Arbejdsopgaver" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b6943f1d-1666-4a8f-9248-d773a284c068" LastKnownName="Arbejdsopgaver" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e968002-1631-45db-80f3-873feb182565" name="Dag" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c2ba6f21-02b3-4ee4-a40f-9987a7a90446" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c59b995-e2f8-4875-93e3-5c891cecc0d2" name="Arbejdsopgaver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0999e803-c2b6-443c-8b92-be145ea538ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f87be05-4cce-4750-9b06-a2b2440f0d58" />
+          </association>
+          <association Id="a4316176-d010-4c5e-b128-d43833d77e85" isDerived="false" sourceEndRoleName="Dag" targetEndRoleName="Tilmelding" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e8a3a991-656d-4feb-a69a-a71ed05e9a61" LastKnownName="Deltagere" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16b587fa-419d-49fe-9f34-d3f244429d44" name="Dag" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="66a16fb5-1b93-4052-9d4a-6bf1095a98f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2cd89263-0e4e-4bf8-88d7-99b8189ae0c9" name="Tilmelding" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a138e4a-787d-4169-9f52-8b6ec7acbc7a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="89209cde-07d5-427a-8139-66bed11fca40" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="93db1cb1-5e5f-44d5-90a4-4007a4bf6ba1" name="mandag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b8dc6a6b-f378-46df-8b1f-386d643a3715" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ca6b816a-1b5f-48c4-927c-756604bb022c" LastKnownName="list&lt;deltager&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="db1ea9e2-b96a-47c8-b142-b18fced0f892" name="tirsdag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="380a44cf-6f94-41d6-a7ad-f8f45cc0dbfb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="248f114d-1d93-436c-b517-bc485fd0cfee" LastKnownName="list&lt;deltager&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="ce3672d9-88e0-44d5-bb5e-3f254e778209" name="onsdag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d4cd7e31-a5d4-4ece-a9ec-1998aac26c63" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ca6b816a-1b5f-48c4-927c-756604bb022c" LastKnownName="list&lt;deltager&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="e2d75fd7-5201-49c4-82d4-0535017c5b34" name="torsdag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e28d7ad-b96a-48c8-af34-e33ed7845f6c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ca6b816a-1b5f-48c4-927c-756604bb022c" LastKnownName="list&lt;deltager&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6aee42d6-a6c8-4d47-b448-c331473e39cf" name="Login" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c1577429-5d86-4585-bff4-fa2d7a56fd17" />
+        <targetEnds>
+          <association Id="4024d2cc-14f6-4e9a-88e2-c7b982f16409" isDerived="false" sourceEndRoleName="Login" targetEndRoleName="Hus" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a44e05a4-228b-4732-a477-81090af42bee" LastKnownName="Hus" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2dd7e5db-6211-4ef2-8e80-e7ef81579cfe" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a431266-767b-4b0f-8dfb-d2df84d4767b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="212d3a26-78ce-4543-bb8e-cd9b26dfffeb" name="Hus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="be57fcb8-6939-4c47-8c99-2b175b6a68e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="447d35b5-b6bd-47b8-9a03-f26509f00534" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ca6b816a-1b5f-48c4-927c-756604bb022c" name="list&lt;deltager&gt;" isAbstract="false" isLeaf="false" cachedFullName="list&lt;deltager&gt;">
+        <elementDefinition Id="553a0ff0-605d-40c9-971d-d9ed6f836c3c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="248f114d-1d93-436c-b517-bc485fd0cfee" name="list&lt;deltager&gt;" isAbstract="false" isLeaf="false" cachedFullName="list&lt;deltager&gt;">
+        <elementDefinition Id="553a0ff0-605d-40c9-971d-d9ed6f836c3c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="4a3f70a3-b0ba-44d7-90ae-2ccd10801048" name="ModelingProject1">
+    <elementDefinition Id="8934ec41-5b5a-4cc9-94f0-9318123099e8" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6103ac84-b972-439f-abf5-efbc9c8b2f79">
+        <profileInstance Id="b6fecff2-1a78-4da4-a276-c156eaaa0ec9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cd982a16-c4c7-4c49-a8af-658ca4c7f3da">
+        <profileInstance Id="15022dda-342b-4b5c-af89-1be61e854a7f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

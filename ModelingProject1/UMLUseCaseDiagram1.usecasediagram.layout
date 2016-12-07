@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+  <useCaseModelRootMoniker Id="c00bf099-7fdc-4977-90a7-42675eb72741" />
+  <nestedChildShapes>
+    <commentShape Id="312f357c-8dbe-430c-b086-eb4433527606" absoluteBounds="1.375, 0.75, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="870b1893-08ca-43e3-a858-e41e34adebb7" />
+      <relativeChildShapes />
+    </commentShape>
+  </nestedChildShapes>
+</useCaseDiagram>
